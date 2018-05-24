@@ -1,0 +1,59 @@
+html {
+    font-size: 20px;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  text-align: center;
+  color: #293c4b;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+img {
+  margin: 20px 0;
+  max-width: 200px;
+}
+
+.chess-board {
+}
+
+.chess-board__row {
+    display: flex;
+    justify-content: center;
+}
+
+.chess-board__cell,
+.chess-board__cell--target,
+.chess-board__cell--knight {
+    background-color: #EEE;
+    width:  16px;
+    height: 16px;
+}
+
+.chess-board__cell--knight {
+    background-color: #09F;
+    width:  16px;
+    height: 16px;
+}
+
+.chess-board__cell--target {
+    background-color: #F80;
+    width:  16px;
+    height: 16px;
+}
+
+.chess-board__row:nth-child(odd)
+.chess-board__cell:nth-child(odd),
+.chess-board__row:nth-child(even)
+.chess-board__cell:nth-child(even) {
+    background-color: #333;
+    color: #EEE;
+}
+
+.total-moves {
+    font-size: 2rem;
+}
