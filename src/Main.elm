@@ -60,17 +60,6 @@ update msg model =
 ---- VIEW ----
 
 
-renderPieceCoordinates : Piece -> Location -> Html Msg
-renderPieceCoordinates piece location =
-    div []
-        [ text
-            (toString piece
-                ++ " @ "
-                ++ toString location
-            )
-        ]
-
-
 view : Model -> Html Msg
 view model =
     div []

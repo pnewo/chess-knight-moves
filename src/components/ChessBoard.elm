@@ -70,6 +70,12 @@ renderChessboardRow chessBoardRow rowIndex =
         chessBoardRow
 
 
-renderChessboardPieceCoordinates : ChessBoard -> Html Msg
-renderChessboardPieceCoordinates chessBoard =
-    div [ class "chess-board" ] [ text "hello" ]
+renderPieceCoordinates : Piece -> Location -> Html Msg
+renderPieceCoordinates piece location =
+    div []
+        [ text
+            (toString piece
+                ++ " @ "
+                ++ toString location
+            )
+        ]
